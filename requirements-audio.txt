@@ -1,0 +1,4 @@
+-r requirements.txt
+# Pin PyAV below 19 for compatibility with the current faster-whisper release.
+av==18.1.0
+faster-whisper>=1.1.0

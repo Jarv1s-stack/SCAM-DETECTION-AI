@@ -1,7 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "python train.py",
   "functions": {
     "api/**/*.py": {
+      "includeFiles": "models/scam_model.joblib",
       "maxDuration": 30
     }
   }
